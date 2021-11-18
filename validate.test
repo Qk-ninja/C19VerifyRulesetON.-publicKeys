@@ -1,0 +1,7 @@
+test('One dose, valid - oneDoseValid', () => {
+    const qrCode = require('../../__mocks__/qr-codes/oneDoseValid.json');
+    expect(applyRules(rules, qrCode)).toBeTruthy();
+  });
+
+  test('Two dose, valid - twoDoseValidMix', () => {
+    let qrCode = require('../../__mocks__/qr-codes/twoDoseValidMix.json');
